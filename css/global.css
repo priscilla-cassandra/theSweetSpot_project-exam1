@@ -18,3 +18,40 @@ h3 {
 * {
   font-family: "Roboto", sans-serif;
 }
+
+/*----------------FOOTER GLOBAL----------------*/
+.site-content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.social-media,
+.tagline {
+  color: var(--secondary-color);
+}
+footer {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-media-icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+.social-media {
+  text-align: center;
+}
+.footer-logo a {
+  display: flex;
+  justify-content: center;
+}
+.footer-logo img {
+  width: 35%;
+  height: auto;
+}
+.tagline {
+  text-align: center;
+  width: 12rem;
+}
