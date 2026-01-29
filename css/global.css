@@ -41,6 +41,13 @@ h3 {
 nav {
   display: none;
 }
+nav li {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -50,6 +57,23 @@ header {
 }
 
 @media (min-width: 768px) {
+  nav {
+    display: flex;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .logout-nav,
+  .create-post-nav,
+  .edit-post-nav {
+    display: none;
+  }
 }
 
 /*----------------FOOTER GLOBAL----------------*/
