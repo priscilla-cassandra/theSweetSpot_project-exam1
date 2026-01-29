@@ -74,6 +74,22 @@ header {
   .edit-post-nav {
     display: none;
   }
+  /*  .login-nav,
+  .create-user-nav,
+   {
+    display: none;
+  }*/
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 1400px) {
+  header {
+    padding: 0 10rem;
+  }
 }
 
 /*----------------FOOTER GLOBAL----------------*/
@@ -162,5 +178,15 @@ footer {
   }
   .social-media {
     padding-right: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    padding: 1rem 8rem;
+  }
+}
+@media (min-width: 1400px) {
+  footer {
+    padding: 1rem 20rem;
   }
 }
