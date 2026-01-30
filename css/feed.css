@@ -1,11 +1,13 @@
 .heading {
   text-align: center;
   color: var(--secondary-color);
+  padding: 0 6.5rem;
 }
 .heading h1 {
   margin-bottom: 0;
   margin-top: 2rem;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 .heading i {
   font-size: 1.25rem;
