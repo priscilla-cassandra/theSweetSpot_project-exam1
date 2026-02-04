@@ -12,3 +12,18 @@
 .heading i {
   font-size: 1.25rem;
 }
+
+.blog-grid {
+}
+
+/*Add this class to new blog thumbnail with classList.add()*/
+.blogpost-thumbnail {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1400px) {
+}
