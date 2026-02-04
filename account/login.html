@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | The Sweet Spot</title>
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/auth.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,9 +14,69 @@
     />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="site-content">
+      <header>
+        <div class="header-logo">
+          <a
+            class="logo-link-header"
+            href="/index.html"
+            aria-label="SweetSpot home"
+          >
+            <img
+              class="footer-logo-header"
+              src="/images/sweet_spot_logo_big_no_background.png"
+              alt="The Sweet Spot"
+            />
+          </a>
+        </div>
+        <button class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav>
+          <ul class="nav-menu">
+            <li class="home-nav"><a href="#">Home</a></li>
+            <li class="login-nav"><a href="#">Log in</a></li>
+            <li class="logout-nav"><a href="#">Log out</a></li>
+            <li class="create-user-nav"><a href="#">Create user</a></li>
+            <li class="create-post-nav"><a href="#">Create blog post</a></li>
+            <li class="edit-post-nav"><a href="#">Edit blog post</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main></main>
+      <footer>
+        <div class="social-media">
+          <h3>FIND US</h3>
+          <div class="social-media-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <div class="line-divider-mobile"></div>
+        <div class="footer-logo">
+          <a
+            class="logo-link-footer"
+            href="/index.html"
+            aria-label="SweetSpot home"
+          >
+            <img
+              class="footer-logo-img"
+              src="/images/sweet_spot_logo_big_no_background.png"
+              alt="The Sweet Spot"
+            />
+          </a>
+        </div>
+        <div class="line-divider-1"></div>
+        <div class="tagline">
+          <p>Delicous sweet treats that just hits the spot</p>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="line-divider-2"></div>
+      </footer>
+    </div>
     <script type="module" src="/js/login.js"></script>
     <script type="module" src="/js/layout.js"></script>
   </body>
