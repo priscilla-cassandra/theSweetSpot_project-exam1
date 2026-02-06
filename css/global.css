@@ -17,6 +17,7 @@ h3 {
 
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 /*----------------HEADER GLOBAL----------------*/
@@ -90,6 +91,27 @@ header {
   header {
     padding: 0 10rem;
   }
+}
+
+/*----------------MAIN CONTENT GLOBAL----------------*/
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-button {
+  margin: 0 auto 0;
+  padding: 0.4rem 4.3rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5%;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
 }
 
 /*----------------FOOTER GLOBAL----------------*/
