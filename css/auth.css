@@ -1,6 +1,7 @@
 .auth {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .auth-card {
@@ -8,6 +9,7 @@
   border-radius: 5px;
   color: var(--secondary-color);
   width: 80%;
+  height: auto;
   margin: 2rem 1rem;
   padding-bottom: 2rem;
 }
@@ -30,7 +32,7 @@
 
 .auth-switch {
   text-align: center;
-  margin: 2rem, 0;
+  margin: 2rem 0;
 }
 
 .auth-switch a {
@@ -57,4 +59,39 @@
   width: 100%;
   border: none;
   border-bottom: solid #999 1px;
+}
+
+@media (min-width: 768px) {
+  .auth-card {
+    margin: 5.2rem 0;
+    width: 60%;
+  }
+  .email-field,
+  .password-field {
+    width: 75%;
+  }
+  .field-control {
+    font-size: 1.125;
+  }
+}
+
+@media (min-width: 992px) {
+  .auth-card h1 {
+    font-size: 2.25rem;
+  }
+  .auth-card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .auth-card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .auth-card {
+    width: 35%;
+  }
 }
