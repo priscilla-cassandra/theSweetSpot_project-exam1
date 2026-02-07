@@ -1,4 +1,5 @@
-.heading {
+.heading,
+.feed-h2 {
   text-align: center;
   color: var(--secondary-color);
   padding: 0 6.5rem;
@@ -13,12 +14,17 @@
   font-size: 1.25rem;
 }
 
+.tagline-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*--------------------CAROUSEL--------------------*/
 
 .carousel-container {
   width: 100%;
   overflow: hidden;
-  padding: 1rem 0;
 }
 
 .carousel-img-container {
@@ -38,15 +44,15 @@
 
 .thumbnail-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  gap: 1rem 0;
-  margin: 0 0.5rem 2rem 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /*(2, 1fr)*/
+  /*justify-items: center;*/
+  gap: 1rem;
+  margin: 2rem 1rem;
 }
 
 /*Add this class to new blog thumbnail with classList.add()*/
 .thumbnail {
-  width: 11rem;
+  width: 100%;
   text-align: center;
   background-color: var(--background-color);
 }
@@ -54,7 +60,7 @@
 .thumbnail h3 {
   font-weight: 400;
   font-size: 1.25rem;
-  margin: 0.5rem 0;
+  margin: 1rem 1.5rem;
   line-height: 1.25rem;
 }
 
@@ -68,8 +74,8 @@
 }
 
 .img-container {
-  width: 11rem;
-  height: 11rem;
+  width: 100%;
+  aspect-ratio: 1/1;
   overflow: hidden;
 }
 .img-container img {
@@ -80,9 +86,44 @@
 }
 
 @media (min-width: 768px) {
+  .carousel-img-container {
+    height: 20rem;
+  }
+  .thumbnail-grid {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+  .thumbnail h3 {
+    font-size: 1.375rem;
+    margin: 1rem 2.6rem;
+  }
+  .thumbnail p {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 992px) {
+  .carousel-img-container {
+    height: 30rem;
+  }
+  .thumbnail-grid {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+  .thumbnail h3 {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  main {
+    margin: 0 2rem;
+  }
 }
+
 @media (min-width: 1400px) {
+  main {
+    margin: 0 7rem 0 7rem;
+  }
+}
+@media (min-width: 1600px) {
+  main {
+    margin: 0 17rem 0 17rem;
+  }
 }
