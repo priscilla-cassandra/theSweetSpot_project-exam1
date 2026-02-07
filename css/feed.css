@@ -44,8 +44,7 @@
 
 .thumbnail-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /*(2, 1fr)*/
-  /*justify-items: center;*/
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 1rem;
   margin: 2rem 1rem;
 }
@@ -85,12 +84,18 @@
   display: block;
 }
 
+@media (min-width: 544px) {
+  .thumbnail-grid {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
 @media (min-width: 768px) {
   .carousel-img-container {
     height: 20rem;
   }
   .thumbnail-grid {
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    margin: 2rem 2.2rem;
   }
   .thumbnail h3 {
     font-size: 1.375rem;
@@ -111,9 +116,6 @@
   .thumbnail h3 {
     font-size: 1.5rem;
     line-height: 1.875rem;
-  }
-  main {
-    margin: 0 2rem;
   }
 }
 
