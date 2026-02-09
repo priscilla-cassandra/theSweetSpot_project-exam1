@@ -67,9 +67,10 @@ nav.open {
   top: 0;
   right: 0;
   left: 0;
-  background: var(--background-color);
+  background: var(--primary-color);
   line-height: 1.7rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .close-menu-button {
   font-size: 1.2rem;
@@ -124,6 +125,8 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .primary-button {
