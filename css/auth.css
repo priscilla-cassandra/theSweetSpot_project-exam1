@@ -14,18 +14,8 @@
   padding-bottom: 2rem;
 }
 
-.auth-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
 .email-field,
 .password-field {
-  /* display: flex;
-  flex-direction: column;
-  width: 100%;*/
   margin: 0 auto;
   width: 85%;
 }
