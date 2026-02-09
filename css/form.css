@@ -1,0 +1,49 @@
+.blog-post-form {
+  background-color: var(--background-color);
+  margin: 2rem 1rem;
+  padding: 1rem;
+  max-width: 50rem;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-field input {
+  border-radius: 0.3rem;
+  border: 1px solid var(--secondary-color);
+}
+
+#title {
+  height: 2rem;
+}
+
+/*----------------------------Edit blog post----------------------------*/
+.form-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+#delete-button {
+  margin: 0 auto 0;
+  padding: 0.4rem 4.3rem;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5%;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .blog-post-form {
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 45rem;
+  }
+}
+
+@media (min-width: 992px) {
+}
