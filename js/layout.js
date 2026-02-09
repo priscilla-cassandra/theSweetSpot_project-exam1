@@ -9,3 +9,9 @@ hamburgerMenu.addEventListener("click", ()=>{
 closeButton.addEventListener("click", ()=>{
     nav.classList.remove("open")
 })
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    nav.classList.remove("open");
+  }
+});
