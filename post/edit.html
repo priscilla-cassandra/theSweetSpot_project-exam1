@@ -57,7 +57,52 @@
         </nav>
       </header>
       <main>
-        <h1>Edit blog post</h1>
+        <h1>Edit blog-post</h1>
+        <form id="new-post" class="blog-post-form">
+          <div class="form-field">
+            <input type="file" id="image" name="image" accept="image/*" />
+          </div>
+          <div class="image preview">
+            <img id="preview" alt="Image preview" />
+          </div>
+          <div class="form-field">
+            <label for="title">Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title of your post"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="ingredients">Ingredients</label>
+            <textarea
+              id="ingredients"
+              name="ingredients"
+              placeholder="Ingredients list"
+              rows="10"
+              required
+            >
+            </textarea>
+          </div>
+          <div class="form-field">
+            <label for="instructions">Instructions</label>
+            <textarea
+              id="instructions"
+              name="instructions"
+              placeholder="Recipe instructions"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="primary-button submit">
+              Update post
+            </button>
+            <button type="button" id="delete-button">Delete post</button>
+          </div>
+        </form>
       </main>
       <footer>
         <div class="social-media">
