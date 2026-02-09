@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/0c657a5b56.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="site-content">
@@ -29,14 +33,15 @@
             />
           </a>
         </div>
-        <button class="hamburger-menu">
+        <button class="hamburger-menu" id="hamburger-toggle">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
         <nav id="site-nav" class="navigation">
+          <button class="close-menu-button" id="close-button">X</button>
           <ul class="nav-menu">
-            <li class="home-nav"><a href="index.html">Home</a></li>
+            <li class="home-nav"><a href="/index.html">Home</a></li>
             <li class="login-nav"><a href="/account/login.html">Log in</a></li>
             <li class="logout-nav"><a href="#">Log out</a></li>
             <li class="create-user-nav">
@@ -51,7 +56,9 @@
           </ul>
         </nav>
       </header>
-      <main></main>
+      <main>
+        <h1>Edit blog post</h1>
+      </main>
       <footer>
         <div class="social-media">
           <h3>FIND US</h3>
