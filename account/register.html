@@ -61,14 +61,15 @@
           <h1>Create user</h1>
           <form class="auth-form" id="register-form">
             <div class="username-field">
-              <label for="username">Username</label>
+              <label for="name">Username</label>
               <div class="field-control">
                 <i class="fa-regular fa-user field-icon"></i>
                 <input
                   type="text"
-                  id="text"
-                  name="text"
+                  id="name"
+                  name="name"
                   placeholder="Type your username"
+                  required
                 />
               </div>
             </div>
@@ -81,6 +82,7 @@
                   id="email"
                   name="email"
                   placeholder="Type your email"
+                  required
                 />
               </div>
             </div>
@@ -93,11 +95,12 @@
                   id="password"
                   name="password"
                   placeholder="Type your password"
+                  required
                 />
               </div>
             </div>
-            <button class="primary-button">Create user</button>
             <p id="auth-error"></p>
+            <button class="primary-button">Create user</button>
           </form>
           <p class="auth-switch">
             Already have an account? <a href="/account/login.html">Log in</a>
