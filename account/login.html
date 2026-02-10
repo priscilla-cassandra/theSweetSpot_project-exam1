@@ -59,7 +59,7 @@
       <main class="auth">
         <section class="auth-card" aria-labelledby="login-auth">
           <h1>Log in</h1>
-          <form class="auth-form">
+          <form class="auth-form" id="login-form">
             <div class="email-field">
               <label for="email">Email</label>
               <div class="field-control">
@@ -84,7 +84,8 @@
                 />
               </div>
             </div>
-            <button class="primary-button">Create user</button>
+            <button class="primary-button">Log in</button>
+            <p id="login-error"></p>
           </form>
           <p class="auth-switch">
             Are you new here?
