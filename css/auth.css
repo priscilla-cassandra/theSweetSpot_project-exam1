@@ -22,12 +22,13 @@
 }
 
 .password-field {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 #login-error,
 #auth-error {
   margin: 0;
+  color: red;
 }
 
 .auth-switch {

@@ -94,12 +94,12 @@ nav.open {
   .close-menu-button {
     display: none;
   }
-  .logout-nav,
+  /*  .logout-nav,
   .create-post-nav,
   .edit-post-nav {
     display: none;
   }
-  /*  .login-nav,
+  .login-nav,
   .create-user-nav,
    {
     display: none;
@@ -130,7 +130,7 @@ form {
 }
 
 .primary-button {
-  margin: 0 auto 0;
+  margin: 0 auto 0.5rem;
   padding: 0.4rem 4.3rem;
   background-color: var(--primary-color);
   border: none;
