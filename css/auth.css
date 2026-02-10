@@ -15,14 +15,24 @@
 }
 
 .email-field,
-.password-field {
+.password-field,
+.username-field {
   margin: 0 auto;
   width: 85%;
 }
 
+.password-field {
+  margin-bottom: 2rem;
+}
+
+#login-error,
+#auth-error {
+  margin: 0;
+}
+
 .auth-switch {
   text-align: center;
-  margin: 2rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .auth-switch a {
@@ -57,7 +67,8 @@
     width: 60%;
   }
   .email-field,
-  .password-field {
+  .password-field,
+  .username-field {
     width: 75%;
   }
   .field-control {
