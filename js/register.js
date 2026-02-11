@@ -1,11 +1,11 @@
-import {BASE_API_URL} from "./api.js"
-
-const AUTH_REGISTER_URL = `${BASE_API_URL}/auth/register`
+import { AUTH_REGISTER_URL } from "./api.js"
 
 const registerForm = document.getElementById("register-form")
-const errorMessageDisplay = document.getElementById("auth-error")
+const messageDisplay = document.getElementById("auth-error")
 
 async function registerUser(userDetails){
+    messageDisplay.textContent= ""
+    messageDisplay.className= ""
     try{
         const options = {
             method: "POST",
@@ -16,15 +16,23 @@ async function registerUser(userDetails){
         }
         const response = await fetch(AUTH_REGISTER_URL, options)
         const result = await response.json()
+
         if(!response.ok){
             console.log(result)
             throw new Error(result?.errors?.[0].message || response.status)
         }
         
-        const registerUser = result.data
+        messageDisplay.textContent = "New user created! You can now log in"
+        messageDisplay.classList.add("success-message")
+        registerForm.reset()
+
+        const registeredUser = result.data
         console.log(response)
+        console.log(registeredUser)
+        
     }catch(error){
-        errorMessageDisplay.textContent = error.message
+        messageDisplay.textContent = error.message
+        messageDisplay.classList.add("error-message")
     }
 }
 
