@@ -28,6 +28,11 @@
 #login-error,
 #auth-error {
   margin: 0;
+}
+.success-message {
+  color: #37be05;
+}
+.error-message {
   color: red;
 }
 
