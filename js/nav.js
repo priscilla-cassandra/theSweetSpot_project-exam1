@@ -1,6 +1,13 @@
+import {isLoggedIn, logout} from "./auth.js"
+
 const hamburgerMenu = document.getElementById("hamburger-toggle")
 const nav = document.getElementById("site-nav")
 const closeButton = document.getElementById("close-button")
+
+const createPostNavLink = document.getElementById("create-post-navigation")
+const createUserNavLink = document.getElementById("create-user-navigation")
+const logoutNavLink = document.getElementById("logout-navigation")
+const loginNavLink = document.getElementById("login-navigation")
 
 //Click hamburger icon, .open class is added to the hamburger menu
 //Hamburger menu is displayed/opened
@@ -19,3 +26,16 @@ window.addEventListener("resize", () => {
     nav.classList.remove("open");
   }
 });
+
+//Hide or display nav-links depending on if a user is logged in or not
+if (isLoggedIn()){
+  createPostNavLink.classList.remove("hidden")
+  logoutNavLink.classList.remove("hidden")
+  loginNavLink.classList.add("hiden")
+  createUserNavLink.classList.add("hidden")
+}else{
+  createPostNavLink.classList.add("hidden")
+  logoutNavLink.classList.add("hidden")
+  loginNavLink.classList.remove("hidden")
+  createUserNavLink.classList.remove("hidden")
+}
