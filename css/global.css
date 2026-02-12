@@ -82,6 +82,11 @@ nav.open {
   display: none;
 }
 
+#greet-user {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 @media (min-width: 768px) {
   nav {
     display: flex;
