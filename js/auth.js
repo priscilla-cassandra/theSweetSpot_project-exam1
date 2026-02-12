@@ -8,6 +8,13 @@ export function isLoggedIn(){
     return !!getAccessToken() //Return "true" if there is an accessToken, return "false" if there is no accessToken
 }
 
+//If there is no user logged in, redirect to login-page
+export function siteAuthentication(){
+    if(!isLoggedIn()){
+        window.location.href = "/account/login.html"
+    }
+}
+
 //When user logs out
 export function logout(){
     localStorage.removeItem("accessToken") //Remove accessToken
