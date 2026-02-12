@@ -39,3 +39,5 @@ if (isLoggedIn()){
   loginNavLink.classList.remove("hidden")
   createUserNavLink.classList.remove("hidden")
 }
+
+logoutNavLink.addEventListener("click", logout)
