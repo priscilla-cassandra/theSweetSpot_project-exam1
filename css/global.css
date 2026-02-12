@@ -78,6 +78,10 @@ nav.open {
   border: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   nav {
     display: flex;
@@ -94,16 +98,6 @@ nav.open {
   .close-menu-button {
     display: none;
   }
-  /*  .logout-nav,
-  .create-post-nav,
-  .edit-post-nav {
-    display: none;
-  }
-  .login-nav,
-  .create-user-nav,
-   {
-    display: none;
-  }*/
 }
 
 @media (min-width: 992px) {
