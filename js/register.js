@@ -22,9 +22,10 @@ async function registerUser(userDetails){
             throw new Error(result?.errors?.[0].message || response.status)
         }
         
+        //If register is succsessfull
         messageDisplay.textContent = "New user created! You can now log in"
         messageDisplay.classList.add("success-message")
-        registerForm.reset()
+        registerForm.reset() //Reset the form when a new user has been created
 
         const registeredUser = result.data
         console.log(response)
@@ -38,8 +39,8 @@ async function registerUser(userDetails){
 
 function onRegisterFormSubmit(event){
 event.preventDefault()
-const formData = new FormData(event.target)
-const formFields = Object.fromEntries(formData)
+const formData = new FormData(event.target) //event.target = the form that was submitted. FormData collects all the values from the input fields in the form
+const formFields = Object.fromEntries(formData) //Object.fromEntries turns FormData into a JavaScript Object
 registerUser(formFields)
 }
 
