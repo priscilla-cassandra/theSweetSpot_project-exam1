@@ -1,2 +1,2 @@
-import {getAccessToken} from "./auth.js"
-import {isLoggedIn} from "./auth.js"
+import {getAccessToken, isLoggedIn, siteAuthentication } from "./auth.js"
+siteAuthentication()
