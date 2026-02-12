@@ -9,6 +9,9 @@ const createUserNavLink = document.getElementById("create-user-navigation")
 const logoutNavLink = document.getElementById("logout-navigation")
 const loginNavLink = document.getElementById("login-navigation")
 
+const loggedInGreeting = document.getElementById("greet-user")
+const username = localStorage.getItem("username")
+
 //Click hamburger icon, .open class is added to the hamburger menu
 //Hamburger menu is displayed/opened
 hamburgerMenu.addEventListener("click", ()=>{
@@ -31,8 +34,12 @@ window.addEventListener("resize", () => {
 if (isLoggedIn()){
   createPostNavLink.classList.remove("hidden")
   logoutNavLink.classList.remove("hidden")
-  loginNavLink.classList.add("hiden")
+  loginNavLink.classList.add("hidden")
   createUserNavLink.classList.add("hidden")
+
+  if(loggedInGreeting && username){
+    loggedInGreeting.textContent = `Hello, ${username}!`
+  }
 }else{
   createPostNavLink.classList.add("hidden")
   logoutNavLink.classList.add("hidden")
