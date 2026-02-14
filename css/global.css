@@ -104,11 +104,17 @@ nav.open {
   .close-menu-button {
     display: none;
   }
+  #greet-user {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 992px) {
   header {
     padding: 0 5rem;
+  }
+  #greet-user {
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 1400px) {
