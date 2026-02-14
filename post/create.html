@@ -62,7 +62,13 @@
         <h1>New blog-post</h1>
         <form id="new-post" class="blog-post-form">
           <div class="form-field">
-            <input type="file" id="image" name="image" accept="image/*" />
+            <label for="imageURL">Image</label>
+            <input
+              type="url"
+              id="imageURL"
+              name="imageURL"
+              placeholder="Paste image URL"
+            />
           </div>
           <div class="image preview">
             <img id="preview" alt="Image preview" />
@@ -84,7 +90,6 @@
               name="ingredients"
               placeholder="Ingredients list"
               rows="10"
-              required
             >
             </textarea>
           </div>
@@ -95,7 +100,6 @@
               name="instructions"
               placeholder="Recipe instructions"
               rows="10"
-              required
             ></textarea>
           </div>
           <button type="submit" class="primary-button submit">
