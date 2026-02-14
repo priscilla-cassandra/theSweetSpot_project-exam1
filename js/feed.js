@@ -16,7 +16,6 @@ async function getBlogPostThumbnail(){
         
         console.log(result)
 
-        
 
         //if(blogPosts.length === 0){
             //thumbnailContainer.innerHTML = `<p> No posts yet! We are working on it`
