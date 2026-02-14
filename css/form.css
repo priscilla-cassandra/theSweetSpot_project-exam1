@@ -15,7 +15,8 @@
   border: 1px solid var(--secondary-color);
 }
 
-#title {
+#title,
+#imageURL {
   height: 2rem;
 }
 
