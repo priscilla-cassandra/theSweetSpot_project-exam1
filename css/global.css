@@ -83,8 +83,9 @@ nav.open {
 }
 
 #greet-user {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   font-weight: 700;
+  margin-right: 0.5rem;
 }
 
 @media (min-width: 768px) {
