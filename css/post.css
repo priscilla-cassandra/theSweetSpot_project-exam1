@@ -1,0 +1,40 @@
+.post-container {
+  height: 100%;
+  overflow: hidden;
+}
+.blogpost-img-container {
+  width: 100%;
+  height: 15rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.blogpost-img-container img {
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.recipe-heading {
+  text-align: center;
+}
+
+.recipe-heading h1 {
+  margin: 0.5rem 0;
+  font-size: 1.875rem;
+}
+
+.recipe-heading i {
+  color: var(--primary-color);
+}
+
+.date-and-author {
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1.5rem;
+}
+.author,
+.date-created {
+  margin: 0;
+}
