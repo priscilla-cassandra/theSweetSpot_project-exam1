@@ -30,6 +30,13 @@ async function logInUser (loginDetails){
         localStorage.setItem("accessToken", accessToken) //Save properties to localStorage
         localStorage.setItem("username", name)
 
+        loginMessageDisplay.textContent = "Login successfull! Redirecting..."
+        loginMessageDisplay.classList.add("success-message")
+
+        setTimeout(()=>{
+            window.location.href = "/index.html"
+        }, 1500)
+
 
     }catch(error){
         loginMessageDisplay.textContent  = error.message
