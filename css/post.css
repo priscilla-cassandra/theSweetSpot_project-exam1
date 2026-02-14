@@ -38,3 +38,68 @@
 .date-created {
   margin: 0;
 }
+
+.ingredients-paragraph,
+.instructions-paragraph {
+  background-color: var(--background-color);
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem;
+}
+
+.share-recipe-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  border: solid 1px;
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.share-recipe-link i {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .blogpost-img-container {
+    height: 18rem;
+    padding: 0.5rem 3rem;
+  }
+  .ingredients-paragraph,
+  .instructions-paragraph {
+    margin: 0.5rem 4rem;
+  }
+  .recipe-heading h1 {
+    font-size: 2rem;
+  }
+  .recipe-heading i {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .blogpost-img-container {
+    height: 24rem;
+    padding: 0.5rem 15rem;
+  }
+  .ingredients-paragraph,
+  .instructions-paragraph {
+    margin: 0.5rem 15rem;
+  }
+  .recipe-heading h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1400px) {
+  .blogpost-img-container {
+    height: 30rem;
+    padding: 1rem 25rem;
+  }
+  .ingredients-paragraph,
+  .instructions-paragraph {
+    margin: 1rem 25rem;
+  }
+}
