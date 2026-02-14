@@ -1,30 +1,47 @@
-import { BASE_API_URL } from "./api";
+import { ALL_POSTS_URL } from "./api";
 const thumbnailContainer = document.getElementById("thumbnail-container")
+thumbnailContainer.classList.add("thumbnail-grid")
+
 
 async function getBlogPostThumbnail(){
     try{
-        const response = await fetch(BASE_API_URL)
+        const response = await fetch(ALL_POSTS_URL)
         const result = await response.json()
-        const blogPosts = result.data 
+        const blogPosts = result.data
+        
+        console.log(result)
 
         if(!response.ok){
             throw new Error(result?.errors?.[0].message || response.status)
         }
 
         blogPosts.forEach(function(post){
+            
             const thumbnailCard = document.createElement("a")
+            thumbnailCard.href = `/post/index.html?id=${post.id}`
+            thumbnailCard.classList.add("thumbnail")
+
             const imgContainer = document.createElement("div")
+            imgContainer.classList.add("img-container")
+            thumbnailCard.appendChild(imgContainer)
+
             const thumbnailImage = document.createElement("img")
+            thumbnailImage.src = post.media?.url
+            imgContainer.appendChild(thumbnailImage)
+
             const thumbnailHeading = document.createElement("h3")
-            const likes = document.createElement ("p")
-
-            thumbnailCard.textContent = ""//How do I add the link to the entire post?
-            thumbnailImage.textContent = post.media 
             thumbnailHeading.textContent = post.title
-            likes.textContent = ""//How do I add different numbered likes on different posts?
-            //How do I add the heart icon?
+            thumbnailCard.appendChild(thumbnailHeading)
 
+            const heartIcon = document.createElement("i")
+            heartIcon.classList.add("fa-solid", "fa-heart", "likes")
 
+            const likes = document.createElement ("p")
+            const likeCount = Math.floor(Math.random()* 100 + 10)
+            likes.append(heartIcon, ` ${likeCount} likes`)
+            thumbnailCard.appendChild(likes)
+
+            thumbnailContainer.appendChild(thumbnailCard)
 
         })
 
@@ -32,3 +49,5 @@ async function getBlogPostThumbnail(){
         thumbnailContainer.textContent = "Could not fetch blog posts"
     }
 }
+
+getBlogPostThumbnail()
