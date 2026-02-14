@@ -20,6 +20,14 @@
   height: 2rem;
 }
 
+.helper-text {
+  margin: 0.5rem 0;
+}
+
+#create-error {
+  margin: 0;
+}
+
 /*----------------------------Edit blog post----------------------------*/
 .form-actions {
   display: flex;
