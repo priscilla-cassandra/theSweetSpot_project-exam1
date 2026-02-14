@@ -15,9 +15,9 @@ async function getBlogPostThumbnail(){
             throw new Error(result?.errors?.[0].message || response.status)
         }
 
-        if(blogPosts.length === 0){
-            thumbnailContainer.innerHTML = `<p> No posts yet! We are working on it`
-        }
+        //if(blogPosts.length === 0){
+            //thumbnailContainer.innerHTML = `<p> No posts yet! We are working on it`
+        //}
 
         blogPosts.forEach(function(post){
             
