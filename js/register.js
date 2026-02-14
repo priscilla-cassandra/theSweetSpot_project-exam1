@@ -6,6 +6,7 @@ const messageDisplay = document.getElementById("auth-error")
 async function registerUser(userDetails){
     messageDisplay.textContent= ""
     messageDisplay.className= ""
+    
     try{
         const options = {
             method: "POST",
@@ -14,6 +15,7 @@ async function registerUser(userDetails){
                 "Content-Type": "application/json"
             }
         }
+        
         const response = await fetch(AUTH_REGISTER_URL, options)
         const result = await response.json()
 
