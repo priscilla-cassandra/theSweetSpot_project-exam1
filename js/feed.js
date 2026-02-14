@@ -1,11 +1,11 @@
-import { ALL_POSTS_URL } from "./api";
+import { BLOG_POSTS_URL } from "./api.js";
 const thumbnailContainer = document.getElementById("thumbnail-container")
 thumbnailContainer.classList.add("thumbnail-grid")
 
 
 async function getBlogPostThumbnail(){
     try{
-        const response = await fetch(ALL_POSTS_URL)
+        const response = await fetch(BLOG_POSTS_URL)
         const result = await response.json()
         const blogPosts = result.data
         
@@ -13,6 +13,10 @@ async function getBlogPostThumbnail(){
 
         if(!response.ok){
             throw new Error(result?.errors?.[0].message || response.status)
+        }
+
+        if(blogPosts.length === 0){
+            thumbnailContainer.innerHTML = `<p> No posts yet! We are working on it`
         }
 
         blogPosts.forEach(function(post){
