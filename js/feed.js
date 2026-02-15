@@ -6,20 +6,20 @@ thumbnailContainer.classList.add("thumbnail-grid")
 async function getBlogPostThumbnail(){
     try{
         const response = await fetch(BLOG_POSTS_URL)
-        
+        const result = await response.json()
+
         if(!response.ok){
             throw new Error(result?.errors?.[0].message || response.status)
         }
         
-        const result = await response.json()
         const blogPosts = result.data
         
         console.log(result)
 
 
-        //if(blogPosts.length === 0){
-            //thumbnailContainer.innerHTML = `<p> No posts yet! We are working on it`
-        //}
+        if(blogPosts.length === 0){
+            thumbnailContainer.innerHTML = `<p> No posts yet! We are working on it`
+        }
 
         blogPosts.forEach(function(post){
             
