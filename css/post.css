@@ -4,7 +4,7 @@
 }
 .blogpost-img-container {
   width: 100%;
-  height: 15rem;
+  height: 20rem;
   padding: 0.5rem;
   margin: 1rem 0;
 }
@@ -66,8 +66,8 @@
 
 @media (min-width: 768px) {
   .blogpost-img-container {
-    height: 18rem;
-    padding: 0.5rem 3rem;
+    height: 25rem;
+    padding: 0.5rem 6rem;
   }
   .ingredients-paragraph,
   .instructions-paragraph {
@@ -82,7 +82,7 @@
 }
 @media (min-width: 992px) {
   .blogpost-img-container {
-    height: 24rem;
+    height: 30rem;
     padding: 0.5rem 15rem;
   }
   .ingredients-paragraph,
@@ -95,7 +95,7 @@
 }
 @media (min-width: 1400px) {
   .blogpost-img-container {
-    height: 30rem;
+    height: 35rem;
     padding: 1rem 25rem;
   }
   .ingredients-paragraph,
