@@ -59,9 +59,28 @@
         </nav>
       </header>
       <main>
-        <div id="blog-post"><!--Add single blog-post here--></div>
+        <div id="blog-post-container" class="post-container">
+          <!--Add single blog-post here-->
+          <div class="blogpost-img-container">
+            <img id="post-image" src="" alt="" />
+          </div>
+          <div class="recipe-heading">
+            <h1 id="post-title"></h1>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="date-and-author">
+            <p class="date-created" id="post-date"></p>
+            <p class="author" id="post-author"></p>
+          </div>
+          <div class="ingredients-paragraph" id="post-ingredients"></div>
+          <div class="instructions-paragraph" id="post-instructions"></div>
+          <div class="share-recipe-link" id="recipe-link">
+            <p>Share this recipe with your friends and family</p>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
         <!--REMOVE FROM HERE-->
-        <div class="post-container">
+        <!--<div class="post-container">
           <div class="blogpost-img-container">
             <img src="/images/red_velvet_cupcakes_chatgpt.jpg" />
           </div>
@@ -94,7 +113,7 @@
             <p>Share this recipe with your friends and family</p>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
-        </div>
+        </div>-->
         <!--TO HERE WHEN ALL JS IS FINISHED-->
       </main>
       <footer>
