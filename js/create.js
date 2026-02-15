@@ -18,11 +18,9 @@ async function createNewBlogPost(blogpostInput){
         const ingredients = blogpostInput.ingredients
         const instructions = blogpostInput.instructions
         //Combine both input fields in the form so they together can be stored in the API body
-        const blogPostBody = `## Ingredients
+        const blogPostBody = `${ingredients}
         
-        ${ingredients}
-        
-        ## Instructions
+        ---INSTRUCTIONS---
 
         ${instructions}`
 
@@ -52,10 +50,16 @@ async function createNewBlogPost(blogpostInput){
         if(!response.ok){
             throw new Error(result?.errors?.[0].message || response.status)
         }
+        
+        const newPostId = result.data.id
 
         //If blog bost was successfully posted, do this
-        publishedMessage.textContent = "Your post was successfully published! Redirecting..."
         publishedMessage.classList.add("success-message")
+        publishedMessage.textContent = "Your post was successfully published! Redirecting..."
+        setTimeout(()=>{
+            window.location.href = `../post/index.html?id=${newPostId}`
+        }, 1500)
+        
 
 
     }catch(error){
