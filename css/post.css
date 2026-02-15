@@ -46,6 +46,10 @@
   margin: 1rem 1rem;
 }
 
+#edit-button {
+  margin: 1rem auto;
+}
+
 .share-recipe-link {
   display: flex;
   flex-direction: column;
@@ -62,6 +66,10 @@
 }
 .share-recipe-link i {
   font-size: 1.25rem;
+}
+.edit-button-container {
+  text-align: center;
+  margin: 2rem 0;
 }
 
 @media (min-width: 768px) {
