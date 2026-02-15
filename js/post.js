@@ -8,6 +8,7 @@ isLoggedIn()
 const params = new URLSearchParams(window.location.search)
 const id = params.get("id")
 const url = `${BLOG_POSTS_URL}/${id}`
+const editButton = document.getElementById("edit-button")
 
 async function fetchSingleBlogPost(){
     try{
@@ -28,6 +29,10 @@ async function fetchSingleBlogPost(){
         
         document.getElementById("post-ingredients").textContent = blogpostParagraphs[0]
         document.getElementById("post-instructions").textContent = blogpostParagraphs[1]
+
+        if(isLoggedIn()){
+            editButton.classList.remove("hidden")
+        }
 
     }catch(error){
         console.error(error)
