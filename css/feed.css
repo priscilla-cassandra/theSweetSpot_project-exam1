@@ -119,9 +119,18 @@
   }
 }
 
+@media (min-width: 1200px) {
+  main {
+    margin: 0 4rem 0 4rem;
+  }
+  .thumbnail-grid {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+
 @media (min-width: 1400px) {
   main {
-    margin: 0 7rem 0 7rem;
+    margin: 0 8rem 0 8rem;
   }
 }
 @media (min-width: 1600px) {
