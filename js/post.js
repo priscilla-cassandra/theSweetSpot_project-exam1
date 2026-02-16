@@ -37,9 +37,7 @@ async function fetchSingleBlogPost(){
             window.location.href= `../post/edit.html?id=${blogPost.id}`
         })
         }
-
-     
-
+        
     }catch(error){
         console.error(error)
     }
