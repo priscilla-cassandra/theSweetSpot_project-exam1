@@ -24,7 +24,7 @@ async function getBlogPostThumbnail(){
         blogPosts.forEach(function(post){
             
             const thumbnailCard = document.createElement("a")
-            thumbnailCard.href = `../post/index.html?id=${post.id}`
+            thumbnailCard.href = `./post/index.html?id=${post.id}`
             thumbnailCard.classList.add("thumbnail")
 
             const imgContainer = document.createElement("div")
