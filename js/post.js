@@ -30,14 +30,14 @@ async function fetchSingleBlogPost(){
         document.getElementById("post-ingredients").textContent = blogpostParagraphs[0]
         document.getElementById("post-instructions").textContent = blogpostParagraphs[1]
 
-        if(isLoggedIn() && localStorage.getItem("name") === blogPost.author.name){
+        if(isLoggedIn() && localStorage.getItem("username") === blogPost.author.name){
             editButton.classList.remove("hidden")
             
             editButton.addEventListener("click", ()=>{
             window.location.href= `../post/edit.html?id=${blogPost.id}`
         })
         }
-        
+
     }catch(error){
         console.error(error)
     }
