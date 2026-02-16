@@ -11,7 +11,7 @@ export function isLoggedIn(){
 //If there is no user logged in, redirect to login-page
 export function siteAuthentication(){
     if(!isLoggedIn()){
-        window.location.href = "/account/login.html"
+        window.location.href = "../account/login.html"
     }
 }
 
