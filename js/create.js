@@ -8,8 +8,6 @@ const createPostUrl = BLOG_POSTS_URL
 const createPostForm = document.getElementById("new-post")
 const publishedMessage = document.getElementById("create-error")
 
-console.log("token:", localStorage.getItem("accessToken"))
-
 async function createNewBlogPost(blogpostInput){
     const accessToken = getAccessToken() //Store current accessToken in variable
     
@@ -60,14 +58,11 @@ async function createNewBlogPost(blogpostInput){
             window.location.href = `../post/index.html?id=${newPostId}`
         }, 1500)
         
-
-
     }catch(error){
         publishedMessage.textContent = error.message
         publishedMessage.classList.add("error-message")
     }
 }
-
 
 function publishBlogPost(event){
     event.preventDefault()
