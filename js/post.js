@@ -1,4 +1,4 @@
-import { BLOG_POSTS_URL,  } from "./api.js"
+import { BLOG_POSTS_URL} from "./api.js"
 import { getAccessToken, isLoggedIn } from "./auth.js"
 
 //Run this first to check logged-in status
@@ -27,8 +27,8 @@ async function fetchSingleBlogPost(){
         
         const blogpostParagraphs = blogPost.body.split("---INSTRUCTIONS---")
         
-        document.getElementById("post-ingredients").textContent = blogpostParagraphs[0]
-        document.getElementById("post-instructions").textContent = blogpostParagraphs[1]
+        document.getElementById("post-ingredients").textContent = blogpostParagraphs[0].trim()
+        document.getElementById("post-instructions").textContent = blogpostParagraphs[1].trim()
 
         if(isLoggedIn() && localStorage.getItem("username") === blogPost.author.name){
             editButton.classList.remove("hidden")
