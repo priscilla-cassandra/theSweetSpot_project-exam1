@@ -9,6 +9,7 @@ const params = new URLSearchParams(window.location.search)
 const id = params.get("id")
 const url = `${BLOG_POSTS_URL}/${id}`
 const editButton = document.getElementById("edit-button")
+const recipeLink = document.getElementById("recipe-link")
 
 async function fetchSingleBlogPost(){
     try{
@@ -42,5 +43,18 @@ async function fetchSingleBlogPost(){
         console.error(error)
     }
 }
+
+recipeLink.addEventListener("click", function(){
+    navigator.clipboard.writeText(window.location.href)
+    const successMessage = document.getElementById("link-copied-message")
+    successMessage.classList.add("success-message")
+    successMessage.classList.remove("copy-hidden")
+    successMessage.classList.add("copy-visible")
+
+    setTimeout(() =>{
+        successMessage.classList.remove("copy-visible")
+        successMessage.classList.add("copy-hidden")
+    }, 2000)
+} )
 
 fetchSingleBlogPost()
