@@ -145,6 +145,15 @@ form {
   font-weight: 600;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.success-message {
+  color: #37be05;
+}
+
 /*----------------FOOTER GLOBAL----------------*/
 .site-content {
   min-height: 100vh;
