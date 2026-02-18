@@ -47,7 +47,7 @@
 }
 
 #edit-button {
-  margin: 1rem auto;
+  margin: 1rem auto 0;
 }
 
 .share-recipe-link {
@@ -58,18 +58,32 @@
   width: 15rem;
   margin: 0 auto;
   margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  padding: 0 0.5rem 1rem 0.5rem;
   text-align: center;
   border: solid 1px;
   border-color: var(--primary-color);
   color: var(--secondary-color);
+  background: none;
 }
+
 .share-recipe-link i {
   font-size: 1.25rem;
 }
 .edit-button-container {
   text-align: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+#link-copied-message {
+  text-align: center;
+  transition: opacity 0.3s ease;
+  margin-top: 0;
+}
+
+.copy-hidden {
+  opacity: 0;
+}
+.copy-visible {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
