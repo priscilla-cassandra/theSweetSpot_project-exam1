@@ -82,6 +82,10 @@
   width: 100%;
   text-align: center;
   background-color: var(--background-color);
+  transition: transform 0.3s ease-in-out;
+}
+.thumbnail:hover {
+  transform: scale(1.05);
 }
 
 .thumbnail h3 {
