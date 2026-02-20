@@ -57,13 +57,19 @@
   align-items: center;
   width: 15rem;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 0 0.5rem 1rem 0.5rem;
   text-align: center;
   border: solid 1px;
   border-color: var(--primary-color);
   color: var(--secondary-color);
   background: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.share-recipe-link:hover {
+  transform: scale(1.05);
 }
 
 .share-recipe-link i {
@@ -77,6 +83,7 @@
   text-align: center;
   transition: opacity 0.3s ease;
   margin-top: 0;
+  font-weight: 800;
 }
 
 .copy-hidden {
@@ -100,6 +107,9 @@
   }
   .recipe-heading i {
     font-size: 1.5rem;
+  }
+  .share-recipe-link {
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 992px) {

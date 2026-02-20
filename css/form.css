@@ -42,8 +42,12 @@
   font-size: 1rem;
   font-weight: 600;
   margin: 1rem 0;
+  cursor: pointer;
 }
-
+#delete-button:hover {
+  background-color: #7f0000;
+  color: white;
+}
 @media (min-width: 768px) {
   .blog-post-form {
     margin: auto;

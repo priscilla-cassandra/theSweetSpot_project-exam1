@@ -143,6 +143,13 @@ form {
   border-radius: 5%;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-button:hover,
+.carousel-button:hover {
+  background-color: #8a6d6a;
+  color: white;
 }
 
 a {
