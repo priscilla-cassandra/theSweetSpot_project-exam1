@@ -97,6 +97,7 @@ async function getBlogPostThumbnail(){
 
             const thumbnailImage = document.createElement("img")
             thumbnailImage.src = post.media?.url
+            thumbnailImage.alt = post.title
             imgContainer.appendChild(thumbnailImage)
 
             const thumbnailHeading = document.createElement("h3")
