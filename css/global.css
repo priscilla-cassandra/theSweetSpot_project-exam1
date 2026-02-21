@@ -148,6 +148,7 @@ form {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .primary-button:hover,
