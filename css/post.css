@@ -46,6 +46,12 @@
   margin: 1rem 1rem;
 }
 
+#post-ingredients,
+#post-instructions {
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
 #edit-button {
   margin: 1rem auto 0;
 }
