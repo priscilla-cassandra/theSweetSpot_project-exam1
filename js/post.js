@@ -26,8 +26,8 @@ async function fetchSingleBlogPost(){
         document.getElementById("post-date").textContent = new Date(blogPost.created).toLocaleDateString()
         document.getElementById("post-author").textContent = blogPost.author.name
         
-        const blogpostParagraphs = blogPost.body.split("---INSTRUCTIONS---")
-        
+        const blogpostParagraphs = blogPost.body.split("---INSTRUCTIONS---") 
+
         document.getElementById("post-ingredients").textContent = blogpostParagraphs[0].trim()
         document.getElementById("post-instructions").textContent = blogpostParagraphs[1].trim()
 
