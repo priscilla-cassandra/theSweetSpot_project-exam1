@@ -19,5 +19,5 @@ export function siteAuthentication(){
 export function logout(){
     localStorage.removeItem("accessToken") //Remove accessToken
     localStorage.removeItem("username") //Remove username
-    window.location.href = "../index.html" //Redirect to the feed/home page
+    window.location.replace = "/theSweetSpot_project-exam1/" //Redirect to the feed/home page
 }
