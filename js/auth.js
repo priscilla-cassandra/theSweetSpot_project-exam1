@@ -19,5 +19,14 @@ export function siteAuthentication(){
 export function logout(){
     localStorage.removeItem("accessToken") //Remove accessToken
     localStorage.removeItem("username") //Remove username
-    window.location.replace("/theSweetSpot_project-exam1/") //Redirect to the feed/home page
+
+    //This makes logout link work on both LiveServer and Github pages
+    const isGithubPages = window.location.hostname.includes("github.io")
+    if(isGithubPages){
+        window.location.replace("/theSweetSpot_project-exam1/") //This did not work on liveServer
+    }else{
+        window.location.replace("/") //This did not work on github pages
+    }
+
+    //window.location.replace("/theSweetSpot_project-exam1/") //Redirect to the feed/home page
 }
