@@ -30,7 +30,7 @@
   margin: 0;
 }
 .success-message {
-  color: #37be05;
+  color: #1b5e03;
 }
 .error-message {
   color: red;
@@ -42,9 +42,9 @@
 }
 
 .auth-switch a {
-  color: #37be05;
+  color: #1b5e03;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .field-control {
