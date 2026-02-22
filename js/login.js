@@ -39,8 +39,9 @@ async function logInUser (loginDetails){
 
 
     }catch(error){
-        loginMessageDisplay.textContent  = error.message
+        loginMessageDisplay.textContent  = "Something went wrong. Please try again"
         loginMessageDisplay.classList.add("error-message")
+        console.log(error.message)
     }
 }
 

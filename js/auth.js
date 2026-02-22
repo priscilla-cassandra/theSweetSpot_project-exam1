@@ -17,16 +17,14 @@ export function siteAuthentication(){
 
 //When user logs out
 export function logout(){
-    localStorage.removeItem("accessToken") //Remove accessToken
-    localStorage.removeItem("username") //Remove username
+    localStorage.removeItem("accessToken")
+    localStorage.removeItem("username")
 
     //This makes logout link work on both LiveServer and Github pages
     const isGithubPages = window.location.hostname.includes("github.io")
     if(isGithubPages){
-        window.location.replace("/theSweetSpot_project-exam1/") //This did not work on liveServer
+        window.location.replace("/theSweetSpot_project-exam1/") //This alone did not work on LiveServer
     }else{
-        window.location.replace("/") //This did not work on github pages
+        window.location.replace("/") //This alone did not work on github pages
     }
-
-    //window.location.replace("/theSweetSpot_project-exam1/") //Redirect to the feed/home page
 }

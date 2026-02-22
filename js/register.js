@@ -34,8 +34,9 @@ async function registerUser(userDetails){
         console.log(registeredUser)
         
     }catch(error){
-        messageDisplay.textContent = error.message
+        messageDisplay.textContent = "Something went wrong. Please try again"
         messageDisplay.classList.add("error-message")
+        console.log(error.message)
     }
 }
 

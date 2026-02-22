@@ -15,7 +15,8 @@ async function createNewBlogPost(blogpostInput){
         
         const ingredients = blogpostInput.ingredients
         const instructions = blogpostInput.instructions
-        //Combine both input fields in the form so they together can be stored in the API body
+        //Combine both input fields in the form so they together can be stored in the API body.
+        //When fetching posts, split the body at ---INSTRUCTIONS--- and display each array in their respective containers
         const blogPostBody = `${ingredients}
         
         ---INSTRUCTIONS---
@@ -59,8 +60,9 @@ async function createNewBlogPost(blogpostInput){
         }, 1500)
         
     }catch(error){
-        publishedMessage.textContent = error.message
+        publishedMessage.textContent = "There was a problem with publishing your post."
         publishedMessage.classList.add("error-message")
+        console.log(error.message)
     }
 }
 

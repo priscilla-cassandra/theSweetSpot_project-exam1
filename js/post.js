@@ -40,7 +40,9 @@ async function fetchSingleBlogPost(){
         }
 
     }catch(error){
-        console.error(error)
+        const blogPostContainer = document.getElementById("blog-post-container")
+        blogPostContainer.textContent = "There was a problem with finding the post"
+        console.log(error.message)
     }
 }
 

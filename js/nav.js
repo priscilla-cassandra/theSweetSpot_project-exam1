@@ -23,7 +23,7 @@ closeButton.addEventListener("click", ()=>{
     nav.classList.remove("open")
 })
 
-//Close hamburger menu when screen-size gets >= 768px
+//Close hamburger menu automatically when screen-size gets >= 768px
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 768) {
     nav.classList.remove("open");

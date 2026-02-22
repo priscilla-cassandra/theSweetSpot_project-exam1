@@ -117,6 +117,7 @@ async function getBlogPostThumbnail(){
 
     } catch(error){
         thumbnailContainer.textContent = "Could not fetch blog posts"
+        console.log(error.message)
     }
 }
 

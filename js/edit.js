@@ -19,6 +19,7 @@ async function fetchPostToEdit(){
         const result = await response.json()
 
         if(!response.ok){
+            //If no API error message, show HTTP status number
             throw new Error(result?.errors?.[0].message || response.status)
         }
 
@@ -32,7 +33,8 @@ async function fetchPostToEdit(){
         document.getElementById("edit-instructions").value = blogPostParagraphs[1].trim() || ""
 
     }catch (error){
-        editForm.textContent = error.message
+        editForm.textContent = "Something went wrong. Could not get post for editing"
+        console.log(error.message)
     }
 }
 
@@ -79,7 +81,6 @@ async function deleteBlogPost(url){
         }
 
         const response = await fetch (url, options)
-        console.log(response) //Console to see the response
 
         if(response.status === 204){
             editForm.reset()
