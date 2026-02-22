@@ -80,6 +80,7 @@ nav.open {
   font-size: 1.2rem;
   background: none;
   border: none;
+  color: black;
 }
 
 .hidden {
