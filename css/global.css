@@ -143,6 +143,7 @@ form {
   margin: 0 auto 0.5rem;
   padding: 0.4rem 4.3rem;
   background-color: var(--primary-color);
+  color: black;
   border: none;
   border-radius: 5%;
   font-size: 1rem;
