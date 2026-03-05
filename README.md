@@ -1,4 +1,5 @@
 # The SweetSpot - project-exam1
+![thesweetspot_thumbnail_compressed](https://github.com/user-attachments/assets/2f0d4a07-7a8a-4fd8-a032-73a07570abe3)
 
 The SweetSpot is a dessert blog that features decadent, sweet, and aesthetically dessert recipes for any occasion. All recipes include an ingredients list and an easy-to-follow instructions manual. <br> 
 New blog posts are created by the owner of the blog, who can log in via the login-form to get access to the crete/edit/delete functionality. <br>
